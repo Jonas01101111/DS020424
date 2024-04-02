@@ -31,48 +31,66 @@ namespace MatriculaAlunosProva
                         if (contD < 5)
                         {
                             contD++;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Matircula em Desenvolvimento de Sistemas realizada!");
+                            Console.ResetColor();
                         }
                         else
                         {
+                            Console.ForegroundColor= ConsoleColor.Red;
                             Console.WriteLine("Curso Lotado");
+                            Console.ResetColor();
                         }
                         break;
                     case "A":
                         if (contA < 5)
                         {
                             contA++;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Matircula em Administração realizada");
+                            Console.ResetColor();
                         }
                         else
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Curso Lotado");
+                            Console.ResetColor();
                         }
                         break;
                     case "M":
                         if (contM < 5)
                         {
                             contM++;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Matircula em Mecatronica realizada");
+                            Console.ResetColor();
                         }
                         else
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Curso Lotado");
+                            Console.ResetColor();
                         }
                         break;
                     case "E":
                         if (contE < 5)
                         {
                             contE++;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Matircula em Edificações realizada");
+                            Console.ResetColor();
                         }
                         else
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Curso Lotado");
+                            Console.ResetColor();
                         }
                         break;
                     default:
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Curso Inválido \n Adote o formato:\n D = DesSist. A = Adm. M = Meca. E = Edf");
+                        Console.ResetColor();
                         break;
                 }
                 Console.WriteLine("Deseja Continuar? S ou N?");
@@ -80,7 +98,7 @@ namespace MatriculaAlunosProva
                 check = check.ToUpper();
                 Console.Clear();
             }
-            Console.WriteLine("--Matriculas--\n"+"DS:"+contD+"\nADM:"+contA+"\nMECA"+contM+"\nEDF"+contE);
+            Console.WriteLine("--Matriculas--\n"+"DS:"+contD+"\nADM:"+contA+"\nMECA:"+contM+"\nEDF:"+contE);
             Console.ReadKey();
 
         }
